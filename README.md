@@ -75,8 +75,7 @@ Le fichier `docker-compose.yml` à la racine remplace toutes les commandes manue
 docker compose up --build
 Pour arrêter et supprimer les conteneurs : `docker compose down`.
 
-![compose ps](screenshots/compose-ps.png)
-![application](screenshots/app-compose.png)
+## les captures d'écran qui se trouve dans le dossier : screnshoot
 
 ## 8. Jenkins 
 Pour automatiser le déploiement, j'ai créé un `Jenkinsfile` à la racine du projet. Ce pipeline récupère le code depuis GitHub (Checkout), construit les images (`docker compose build`), redéploie les conteneurs (`docker compose down` puis `up -d`) et vérifie leur état (`docker compose ps`).
